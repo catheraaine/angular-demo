@@ -1,0 +1,10 @@
+@use '../settings/colors' as colors;
+@use '../settings/fonts' as fonts;
+@use '../tools/font-smoothing' as *;
+
+body {
+  @include font-smoothing();
+  background-color: colors.$background;
+  color: colors.$text;
+  font-family: fonts.$font-primary;
+}
